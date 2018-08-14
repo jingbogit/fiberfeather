@@ -18,7 +18,7 @@ Thus view-dependent LOD is _anisotropic_: a single object can span multiple leve
 
 ![](/assets/lod_anisotropic_far.png)
 
-Demo 
+[Demo](/assets/code/examples/lod/lod_anisotropic/index.html)
 
 ---
 

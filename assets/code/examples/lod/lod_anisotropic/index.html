@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  </head>
+  <body>
+    <div id="page-content"></div>
+    <!--<script src="../public/js/jquery-2.1.1.min.js"></script>-->
+    <script src="./../../../public/js/stats.min.js"></script>
+    <script src="./../../../public/js/three.min.js"></script>
+    <script src="./../../../public/js/axios.min.js"></script>
+    <script src="././altizure-gl-engine.min.js" charset="utf-8"></script>
+    <!--<script src="../public/js/rollup/rollup.js" charset="utf-8"></script>-->
+    <script>
+
+      console.log('engine', engine)
+
+      let earth = new engine.EarthViewer('page-content', {
+        // camera: {
+        //   poseTo: {lat: 122.335836,
+        //     lng: 114.263885,
+        //     alt: 1000000,
+        //     north: 0,
+        //     tilt: 60,
+        //     up: 0
+        //   },
+        //   flyTo: {lat: 22.335836,
+        //     lng: 114.263885,
+        //     alt: 1000,
+        //     north: 0,
+        //     tilt: 60,
+        //     up: 0
+        //   }
+        // },
+        api: {
+          apiUrl: 'https://api.altizure.com/graphql',
+          key: 'ToA0NQtp92u58EAqyUyKYg5bVBdPNIuFozRkDuq'
+        }
+      })
+
+
+      if (Stats) {
+        earth._stats = new Stats()
+        earth.threeContainer.appendChild(earth._stats.dom)
+      }
+    </script>
+  </body>
+</html>
