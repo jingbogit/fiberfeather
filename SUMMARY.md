@@ -11,4 +11,7 @@
   * [Mercator Projection](earth/mercator-projection.md)
   * [WMS](earth/wms.md)
   * [WMTS](earth/wmts.md)
+* [Features](features.md)
+  * [Photo Fusion](features/photo-fusion.md)
+  * Video Fusion
 
